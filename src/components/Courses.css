@@ -1,0 +1,111 @@
+.courses {
+  padding: 80px 5vw;
+  text-align: center;
+  color: #00ffcc;
+  background: rgba(0, 0, 0, 0.6);
+  position: relative;
+  z-index: 5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  box-sizing: border-box;
+  min-height: 100vh;
+  overflow-y: visible;
+}
+
+.semester-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  width: 100%;
+}
+
+.semester-row {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 40px;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.semester-card {
+  background: rgba(0, 255, 204, 0.1);
+  border: 2px solid #00ffcc;
+  color: #00ffcc;
+  padding: 30px 60px;
+  border-radius: 16px;
+  font-size: 1.8rem;
+  font-weight: bold;
+  box-shadow: 0 0 15px rgba(0, 255, 204, 0.3);
+  cursor: pointer;
+  width: fit-content;
+  transition: 0.3s ease;
+  backdrop-filter: blur(8px);
+  animation: fadeInUp 0.8s ease forwards;
+  opacity: 0;
+  position: relative;
+  z-index: 2;
+}
+
+.semester-card:hover {
+  transform: translateY(-6px) scale(1.05);
+  box-shadow: 0 0 40px #00ffcc;
+  background: rgba(0, 255, 204, 0.2);
+}
+
+.animate-card {
+  animation: fadeInUp 1s ease forwards;
+}
+
+.glow::after {
+  content: '';
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  right: -10px;
+  bottom: -10px;
+  background: radial-gradient(circle, rgba(0,255,204,0.3) 0%, transparent 70%);
+  border-radius: 20px;
+  z-index: -1;
+  animation: pulsate 2s infinite ease-in-out;
+}
+
+@keyframes fadeInUp {
+  0% {
+    transform: translateY(40px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes pulsate {
+  0% {
+    transform: scale(1);
+    opacity: 0.6;
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0.6;
+  }
+}
+
+@media (max-width: 768px) {
+  .semester-card {
+    font-size: 1.2rem;
+    padding: 20px 35px;
+  }
+  .semester-row {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+}
