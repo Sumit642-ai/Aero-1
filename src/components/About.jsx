@@ -1,5 +1,5 @@
 import TeamCard from './TeamCard';
-import './about.css';
+import './About.css';
 import sumit from "../assets/profile/sumit.jpg"
 import zayed from "../assets/profile/zayed.jpg"
 
