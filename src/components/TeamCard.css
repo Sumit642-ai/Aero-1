@@ -9,7 +9,8 @@
 
 .hologram-card {
   position: relative;
-  width: 300px;
+  width: min(300px, 80vw);
+  margin-top: 10px;
   height: 360px;
   background: rgba(255, 255, 255, 0.05);
   border: 1px solid rgba(0, 255, 255, 0.2);
@@ -232,5 +233,12 @@
   100% {
     transform: translateX(-50%) translateY(-150px);
     opacity: 0;
+  }
+}
+
+@media (pointer: coarse) {
+  .social-icons {
+    opacity: 1;
+    transform: translateY(0);
   }
 }

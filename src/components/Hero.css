@@ -56,18 +56,6 @@
   100% { transform: translateY(0); }
 }
 
-@media (max-width: 768px) {
-  .hero {
-    flex-direction: column;
-    text-align: center;
-    height: auto;
-  }
-
-  .shuttle {
-    width: 90%;
-    margin-top: 30px;
-  }
-}
 .get-started-btn {
   margin-top: 30px;
   background: transparent;
@@ -88,7 +76,33 @@
   color: #00ffcc;
 }
 
-@media (max-width: 768px) {
+@media only screen and (max-width: 770px) {
+  .hero {
+    padding: 0;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .hero h1 {
+    font-size: 3rem;
+  }
+
+  .hero p {
+    font-size: 1.5rem;
+  }
+
+  .hero button {
+    font-size: 1.5rem;
+  }
+
+  .shuttle {
+    width: 70%;
+  }
+}
+
+@media only screen and (max-width: 550px){
   .hero h1 {
     font-size: 2rem;
   }
@@ -99,5 +113,16 @@
 
   .hero button {
     font-size: 1rem;
+  }
+
+  .hero-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .shuttle {
+    width: 100%;
   }
 }

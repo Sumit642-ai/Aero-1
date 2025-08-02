@@ -5,7 +5,6 @@ import Hero from './components/Hero';
 import Courses from './components/Courses';
 import About from './components/About';
 import SemesterPage from './components/SemesterPage';
-import Contact from './components/Contact';
 
 function App() {
   return (
