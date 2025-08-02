@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { useParams } from 'react-router-dom';
+import { useParams, useNavigate } from 'react-router-dom';
 import semesterSubjects from './semesterSubjects';
 import './SemesterPage.css';
 import Footer from './Footer';
@@ -7,6 +7,7 @@ import Footer from './Footer';
 function SemesterPage() {
     const { id } = useParams();
     const subjects = semesterSubjects[parseInt(id)] || [];
+    const navigate = useNavigate();
 
     useEffect(() => {
         window.scrollTo(0, 0);
@@ -14,6 +15,25 @@ function SemesterPage() {
 
     return (
         <>
+            <div style={{ padding: '20px' }}>
+                <button
+                    onClick={() => navigate('/materials')}
+                    style={{
+                        backgroundColor: '#00ffcc',
+                        color: '#000',
+                        padding: '10px 20px',
+                        borderRadius: '10px',
+                        border: 'none',
+                        cursor: 'pointer',
+                        marginBottom: '20px',
+                        fontWeight: 'bold',
+                        boxShadow: '0 0 5px #00ffcc'
+                    }}
+                >
+                    ← Back to Materials
+                </button>
+            </div>
+
             <div className="subject-grid">
                 {subjects.map((subject, index) => {
                     const isComingSoon = subject.link.includes('your-link');
@@ -48,6 +68,7 @@ function SemesterPage() {
             </div>
             <Footer />
         </>
+
     );
 }
 

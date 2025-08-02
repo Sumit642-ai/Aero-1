@@ -20,7 +20,7 @@ function Courses() {
 
   const handleSemesterClick = (semIndex) => (e) => {
     if (semIndex === 0) {
-      navigate(`/semester/${semIndex + 1}`);
+      navigate(`semester/${semIndex + 1}`);
     } else {
       e.preventDefault();
       alert('Coming Soon');

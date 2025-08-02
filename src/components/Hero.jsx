@@ -1,4 +1,4 @@
-import React from 'react';
+import { Link } from 'react-router-dom';
 import './Hero.css';
 import shuttleImg from '../assets/shuttle.png';
 import { motion } from 'framer-motion';
@@ -16,7 +16,7 @@ function Hero() {
       <div className="hero-text">
         <h1>Study Material Platform</h1>
         <p>For Aerospace Engineering Students</p>
-        <a href="#courses" className="get-started-btn">Get Started</a>
+        <Link to="/materials" className="get-started-btn">Get Started</Link>
 
       </div>
       <img src={shuttleImg} alt="shuttle" className="shuttle" data-aos="zoom-in" data-aos-duration="2000" />

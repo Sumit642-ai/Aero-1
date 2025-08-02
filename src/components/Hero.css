@@ -83,10 +83,11 @@
 }
 
 .get-started-btn:hover {
-  background: #00ffcc33;
-  box-shadow: 0 0 20px #00ffcc, 0 0 30px #00ffcc88;
+  box-shadow: 0 0 20px #17ffd1fb, 0 0 30px #00ffcc88;
   transform: scale(1.05);
+  color: #00ffcc;
 }
+
 @media (max-width: 768px) {
   .hero h1 {
     font-size: 2rem;
