@@ -8,7 +8,7 @@ import { fab } from '@fortawesome/free-brands-svg-icons'
 
 library.add(fas, far, fab)
 
-import './Teamcard.css';
+import './TeamCard.css';
 
 const TeamCard = ({ name, title, image, socials }) => {
   const getIconClass = (url) => {
