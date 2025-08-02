@@ -12,7 +12,7 @@ import './TeamCard.css';
 
 const TeamCard = ({ name, title, image, socials }) => {
   const getIconClass = (url) => {
-    if (url.includes('facebook')) return 'fab fa-facebook';
+    if (url.includes('github')) return 'fa-brands fa-github';
     if (url.includes('mailto')) return 'fas fa-envelope';
     if (url.includes('linkedin')) return 'fab fa-linkedin';
     if(url.includes('instagram')) return 'fa-brands fa-instagram'

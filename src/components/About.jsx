@@ -9,9 +9,9 @@ const credits = [
     "image": sumit,
     "socials": [
       "https://www.instagram.com/sumit_raut7422",
-      "https://www.facebook.com/profile.php?id=100087397276828&mibextid=ZbWKwL",
-      "mailto:abhinavgothwal100@gmail.com",
-      "https://www.linkedin.com/in/abhinav-gothwal-97a37119b/"
+      "https://github.com/Sumit642-ai",
+      "mailto:sumit.raut.24@kgpian.iitkgp.ac.in",
+      "https://www.linkedin.com/in/sumit74224"
     ]
   },
   {
@@ -19,7 +19,7 @@ const credits = [
     "image": zayed,
     "socials": [
       "https://www.instagram.com/zayedmd_786",
-      "https://www.facebook.com/share/1BQnQ41jR9/",
+      "https://github.com/Zayedmd12321",
       "mailto:mdzayedghanchi.24@kgpian.iitkgp.ac.in",
       "https://www.linkedin.com/in/md-zayed-ghanchi-bb999a325"
     ]
