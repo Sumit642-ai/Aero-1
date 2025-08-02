@@ -48,3 +48,7 @@ html, body {
 body {
   overflow-y: auto;
 }
+
+body, #root {
+  background: transparent;
+}

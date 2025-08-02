@@ -1,47 +1,54 @@
-import React from 'react';
-import { motion } from 'framer-motion';
+import TeamCard from './TeamCard';
+import './about.css';
+import sumit from "../assets/profile/sumit.jpg"
+import zayed from "../assets/profile/zayed.jpg"
 
-import './About.css';
-import profilePic from '../assets/my-photo.jpg';
-function About() {
-  
+const credits = [
+  {
+    "name": "Sumit Raut",
+    "image": sumit,
+    "socials": [
+      "https://www.instagram.com/sumit_raut7422",
+      "https://www.facebook.com/profile.php?id=100087397276828&mibextid=ZbWKwL",
+      "mailto:abhinavgothwal100@gmail.com",
+      "https://www.linkedin.com/in/abhinav-gothwal-97a37119b/"
+    ]
+  },
+  {
+    "name": "MD Zayed Ghanchi",
+    "image": zayed,
+    "socials": [
+      "https://www.instagram.com/zayedmd_786",
+      "https://www.facebook.com/share/1BQnQ41jR9/",
+      "mailto:mdzayedghanchi.24@kgpian.iitkgp.ac.in",
+      "https://www.linkedin.com/in/md-zayed-ghanchi-bb999a325"
+    ]
+  },
+];
 
+const About = ({ title, data }) => (
+  <div className="teams-section">
+    <h1>Credit</h1>
+    <div className="team-row">
+      {data.map((member, index) => (
+        <TeamCard
+          key={index}
+          name={member.name}
+          title={member.title}
+          image={member.image}
+          socials={member.socials}
+        />
+      ))}
+    </div>
+  </div>
+);
+
+const Teams = () => {
   return (
-    <section className="about" id="about">
-        <motion.h2 
-        className="about-heading"
-        initial={{ opacity: 0, y: -30 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 1 }}
-      >
-        Credit
-      </motion.h2>
-
-      <motion.div 
-        className="about-center-content"
-        initial={{ opacity: 0, y: 30 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 1, delay: 0.4 }}
-      >
-        <div className="about-photo-wrapper">
-          <img src={profilePic} alt="Profile" className="profile-pic" />
-        </div>
-
-
-         <motion.div 
-          className="links"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 1, delay: 0.8 }}
-        >
-          <a href="https://linkedin.com/in/sumit74224" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-          <a href="https://github.com/Sumit642-ai" target="_blank" rel="noopener noreferrer">GitHub</a>
-          <a href="https://instagram.com/sumit_raut7422" target="_blank" rel="noopener noreferrer">Instagram</a>
-          <a href="mailto:sumitraut.24@kgpian.iitkgp.ac.in">Email</a>
-        </motion.div>
-      </motion.div>
-    </section>
+    <>
+      <About title="Credit" data={credits} />
+    </>
   );
-}
+};
 
-export default About;
+export default Teams;
