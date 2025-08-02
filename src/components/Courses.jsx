@@ -2,7 +2,6 @@ import React, { useEffect } from 'react';
 import './Courses.css';
 import { motion } from 'framer-motion';
 import { Link, useNavigate } from 'react-router-dom';
-import Footer from './Footer';
 
 const semesters = Array.from({ length: 8 }, (_, i) => `Semester ${i + 1}`);
 
@@ -59,7 +58,6 @@ function Courses() {
           <div style={{ height: '100px' }}></div>
         </section>
       </motion.section>
-      <Footer />
     </>
   );
 }

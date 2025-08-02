@@ -2,7 +2,6 @@ import React, { useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import semesterSubjects from './semesterSubjects';
 import './SemesterPage.css';
-import Footer from './Footer';
 
 function SemesterPage() {
     const { id } = useParams();
@@ -66,7 +65,6 @@ function SemesterPage() {
                     );
                 })}
             </div>
-            <Footer />
         </>
 
     );
