@@ -5,16 +5,6 @@ import zayed from "../assets/profile/zayed.jpg"
 
 const credits = [
   {
-    "name": "Sumit Raut",
-    "image": sumit,
-    "socials": [
-      "https://www.instagram.com/sumit_raut7422",
-      "https://github.com/Sumit642-ai",
-      "mailto:sumit.raut.24@kgpian.iitkgp.ac.in",
-      "https://www.linkedin.com/in/sumit74224"
-    ]
-  },
-  {
     "name": "MD Zayed Ghanchi",
     "image": zayed,
     "socials": [
@@ -22,6 +12,16 @@ const credits = [
       "https://github.com/Zayedmd12321",
       "mailto:mdzayedghanchi.24@kgpian.iitkgp.ac.in",
       "https://www.linkedin.com/in/md-zayed-ghanchi-bb999a325"
+    ]
+  },
+  {
+    "name": "Sumit Vijay Raut",
+    "image": sumit,
+    "socials": [
+      "https://www.instagram.com/sumit_raut7422",
+      "https://github.com/Sumit642-ai",
+      "mailto:sumit.raut.24@kgpian.iitkgp.ac.in",
+      "https://www.linkedin.com/in/sumit74224"
     ]
   },
 ];

@@ -51,9 +51,17 @@
 }
 
 @keyframes float {
-  0% { transform: translateY(0); }
-  50% { transform: translateY(-20px); }
-  100% { transform: translateY(0); }
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-20px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
 }
 
 .get-started-btn {
@@ -102,9 +110,13 @@
   }
 }
 
-@media only screen and (max-width: 550px){
+@media only screen and (max-width: 550px) {
+  .hero {
+    height: 70vh;
+  }
+  
   .hero h1 {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
 
   .hero p {
