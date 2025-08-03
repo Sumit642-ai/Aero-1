@@ -1,0 +1,64 @@
+.logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-graphic {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+/* Size variants */
+.logo-container.small .logo-graphic {
+  width: 40px;
+  height: 40px;
+}
+
+.logo-container.medium .logo-graphic {
+  width: 60px;
+  height: 60px;
+}
+
+.logo-container.large .logo-graphic {
+  width: 80px;
+  height: 80px;
+}
+
+.logo-container.xlarge .logo-graphic {
+  width: 120px;
+  height: 120px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .logo-container.medium .logo-graphic {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .logo-container.large .logo-graphic {
+    width: 70px;
+    height: 70px;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo-container.medium .logo-graphic {
+    width: 45px;
+    height: 45px;
+  }
+  
+  .logo-container.large .logo-graphic {
+    width: 60px;
+    height: 60px;
+  }
+} 

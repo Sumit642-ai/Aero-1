@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import './Navbar.css';
+import Logo from './Logo';
 
 function Navbar() {
 
@@ -40,6 +41,12 @@ function Navbar() {
 
   return (
     <nav id='navbar'>
+      <div className="navbar-brand">
+        <Link to="/">
+          <Logo size="medium" className="navbar-logo" />
+        </Link>
+      </div>
+      
       {w > 770 ? (
         <>
           <ul className="nav-links">
