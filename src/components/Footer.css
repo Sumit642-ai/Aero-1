@@ -28,7 +28,6 @@
   font-weight: 700;
   color: #22c55e;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-  margin-bottom: 10px;
 }
 
 .footer-nav {
@@ -47,12 +46,6 @@
 
 .footer-nav a:hover {
   color: #22c55e;
-}
-
-.language-selector {
-  display: flex;
-  gap: 10px;
-  margin-top: 10px;
 }
 
 .lang-btn {
@@ -105,9 +98,6 @@
   align-items: flex-end;
 }
 
-.app-download {
-  margin-bottom: 10px;
-}
 
 .qr-box {
   border: 1px solid rgba(255, 255, 255, 0.2);
@@ -131,7 +121,6 @@
   color: #ffffff;
   font-size: 14px;
   font-weight: 400;
-  margin-top: 10px;
   display: block;
 }
 
@@ -180,7 +169,6 @@
 
 .contact-section {
   color: white;
-  margin-top: 20px;
   padding: 15px 0;
 }
 
@@ -223,6 +211,7 @@
   .contributors {
     flex-direction: column;
     gap: 20px;
+    width: 100%;
   }
 }
 
@@ -238,6 +227,7 @@
     gap: 40px;
     padding: 0 20px;
     text-align: center;
+    align-items: center;
   }
   
   .footer-left {
@@ -256,14 +246,12 @@
   .brand-name {
     font-size: 22px;
     text-align: center;
-    margin-bottom: 15px;
   }
   
   .footer-nav {
     gap: 20px;
     justify-content: center;
     flex-wrap: wrap;
-    margin-bottom: 20px;
   }
   
   .footer-nav a {
@@ -284,13 +272,11 @@
     flex-direction: column;
     gap: 10px;
     text-align: center;
-    margin-top: 20px;
   }
   
   .qr-box {
     min-width: 200px;
     max-width: 220px;
-    margin: 0 auto;
   }
   
   .contact-section {
@@ -299,26 +285,22 @@
   }
   
   .contact-section h4 {
-    margin-bottom: 15px;
     font-size: 18px;
   }
   
   .contributors {
     align-items: center;
-    gap: 20px;
   }
   
   .contributor {
     background-color: rgba(255, 255, 255, 0.05);
     backdrop-filter: blur(5px);
-    padding: 15px;
+    padding: 10x;
     border-radius: 12px;
     border: 1px solid rgba(255, 255, 255, 0.1);
   }
   
   .contributor span {
-    flex-direction: column;
-    gap: 12px;
     text-align: center;
     align-items: center;
   }
@@ -349,20 +331,16 @@
   
   .footer-content {
     padding: 0 15px;
-    gap: 30px;
   }
   
   .brand-name {
     font-size: 20px;
     text-align: center;
-    margin-bottom: 20px;
   }
   
   .footer-nav {
     flex-direction: column;
-    gap: 15px;
     align-items: center;
-    margin-bottom: 25px;
   }
   
   .footer-nav a {
@@ -372,13 +350,8 @@
     text-align: center;
   }
   
-  .contact-section {
-    margin-top: 25px;
-  }
-  
   .contact-section h4 {
     font-size: 16px;
-    margin-bottom: 20px;
   }
   
   .contributors {
@@ -387,12 +360,10 @@
   
   .contributor {
     padding: 12px;
-    margin-bottom: 10px;
   }
   
   .contributor span {
     font-size: 14px;
-    gap: 10px;
   }
   
   .contributor strong {
@@ -407,7 +378,6 @@
   .qr-box {
     min-width: 180px;
     padding: 20px;
-    margin: 0 auto;
   }
   
   .qr-code {
@@ -417,12 +387,10 @@
   
   .qr-box span {
     font-size: 14px;
-    margin-top: 15px;
   }
   
   .footer-legal {
     font-size: 12px;
     padding: 0 15px;
-    margin-top: 25px;
   }
 }
