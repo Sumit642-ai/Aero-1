@@ -2,6 +2,8 @@
     background-color: transparent;
     position: relative;
     z-index: 1;
+    backdrop-filter: blur(10px);
+    background: linear-gradient(180deg, transparent 0%, rgba(0, 0, 0, 0.1) 100%);
 }
 
 .footer-content {
@@ -108,13 +110,21 @@
 }
 
 .qr-box {
-  border: 1px solid #444444;
-  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
   padding: 20px;
   text-align: center;
   min-width: 200px;
-  background-color: rgba(255, 255, 255, 0.05);
-  backdrop-filter: blur(5px);
+  background-color: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+}
+
+.qr-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4);
+  border-color: rgba(34, 197, 94, 0.3);
 }
 
 .qr-box span {
@@ -219,14 +229,23 @@
 
 /* Responsive Design */
 @media (max-width: 768px) {
+  .footer {
+    padding: 30px 0 20px 0;
+  }
+  
   .footer-content {
     flex-direction: column;
-    gap: 30px;
+    gap: 40px;
     padding: 0 20px;
+    text-align: center;
   }
   
   .footer-left {
     order: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
   }
   
   .footer-right {
@@ -234,91 +253,176 @@
     align-items: center;
   }
   
+  .brand-name {
+    font-size: 22px;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  
   .footer-nav {
-    gap: 15px;
+    gap: 20px;
     justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+  }
+  
+  .footer-nav a {
+    font-size: 16px;
+    padding: 8px 16px;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
+    transition: all 0.3s ease;
+  }
+  
+  .footer-nav a:hover {
+    background-color: rgba(34, 197, 94, 0.2);
+    transform: translateY(-2px);
   }
   
   .footer-legal {
     flex-direction: column;
     gap: 10px;
     text-align: center;
+    margin-top: 20px;
   }
   
   .qr-box {
-    min-width: 180px;
-    max-width: 200px;
+    min-width: 200px;
+    max-width: 220px;
+    margin: 0 auto;
   }
   
   .contact-section {
     text-align: center;
+    width: 100%;
+  }
+  
+  .contact-section h4 {
+    margin-bottom: 15px;
+    font-size: 18px;
   }
   
   .contributors {
     align-items: center;
+    gap: 20px;
+  }
+  
+  .contributor {
+    background-color: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(5px);
+    padding: 15px;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
   }
   
   .contributor span {
     flex-direction: column;
-    gap: 8px;
+    gap: 12px;
     text-align: center;
+    align-items: center;
+  }
+  
+  .contributor strong {
+    font-size: 16px;
+    color: #00ffcc;
+  }
+  
+  .contributor a {
+    font-size: 18px;
+    padding: 8px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+  }
+  
+  .contributor a:hover {
+    background-color: rgba(34, 197, 94, 0.3);
+    transform: scale(1.1);
   }
 }
 
 @media (max-width: 480px) {
   .footer {
-    padding: 20px 0 15px 0;
+    padding: 25px 0 15px 0;
   }
   
   .footer-content {
     padding: 0 15px;
-    gap: 25px;
+    gap: 30px;
   }
   
   .brand-name {
-    font-size: 18px;
+    font-size: 20px;
     text-align: center;
+    margin-bottom: 20px;
   }
   
   .footer-nav {
     flex-direction: column;
-    gap: 12px;
+    gap: 15px;
     align-items: center;
+    margin-bottom: 25px;
   }
   
   .footer-nav a {
     font-size: 16px;
-    padding: 8px 0;
+    padding: 12px 20px;
+    width: 200px;
+    text-align: center;
+  }
+  
+  .contact-section {
+    margin-top: 25px;
   }
   
   .contact-section h4 {
-    font-size: 14px;
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  
+  .contributors {
+    gap: 15px;
+  }
+  
+  .contributor {
+    padding: 12px;
+    margin-bottom: 10px;
   }
   
   .contributor span {
-    font-size: 12px;
+    font-size: 14px;
+    gap: 10px;
+  }
+  
+  .contributor strong {
+    font-size: 15px;
   }
   
   .contributor a {
-    font-size: 14px;
+    font-size: 16px;
+    padding: 6px;
   }
   
   .qr-box {
-    min-width: 160px;
-    padding: 15px;
+    min-width: 180px;
+    padding: 20px;
+    margin: 0 auto;
   }
   
   .qr-code {
-    width: 100px;
-    height: 100px;
+    width: 120px;
+    height: 120px;
   }
   
   .qr-box span {
-    font-size: 12px;
+    font-size: 14px;
+    margin-top: 15px;
   }
   
   .footer-legal {
-    font-size: 11px;
-    padding: 0 10px;
+    font-size: 12px;
+    padding: 0 15px;
+    margin-top: 25px;
   }
 }
