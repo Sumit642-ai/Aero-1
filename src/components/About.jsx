@@ -20,7 +20,7 @@ const credits = [
     "socials": [
       "https://www.instagram.com/sumit_raut7422",
       "https://github.com/Sumit642-ai",
-      "mailto:sumit.raut.24@kgpian.iitkgp.ac.in",
+      "mailto:sumitraut.24@kgpian.iitkgp.ac.in",
       "https://www.linkedin.com/in/sumit74224"
     ]
   },

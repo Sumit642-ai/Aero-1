@@ -38,7 +38,7 @@ const Footer = () => {
                   <a href="https://www.linkedin.com/in/sumit74224" target="_blank" rel="noopener noreferrer">
                     <FaLinkedin className="icon" />
                   </a>&nbsp;
-                  <a href="mailto:sumit.raut.24@kgpian.iitkgp.ac.in" target="_blank" rel="noopener noreferrer">
+                  <a href="mailto:sumitraut.24@kgpian.iitkgp.ac.in" target="_blank" rel="noopener noreferrer">
                     <FaEnvelope className="icon" />
                   </a>&nbsp;
                   <a href="https://www.instagram.com/sumit_raut7422" target="_blank" rel="noopener noreferrer">
